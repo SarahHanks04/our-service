@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    padding: 0 8%;
+}
+
+.service {
+    text-align: center;
+    position: relative;
+    padding-top: 10%;
+}
+.service::after {
+    content: "";
+    position :absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 100px;
+    height: 5px;
+    background-color: #303ef7;
+    transform: translateX(-50%);
+}
+
+.row {
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.offers-list {
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 25px 10px;
+    display: grid;
+    gap: 0.7rem;
+    transition: transform 1s, background 1s;
+}
+
+.offers-list i {
+    font-size: 35px;
+    color: #303ef7;
+}
+
+.offers-list:hover {
+    color: #fff;
+    border-radius: 5px;
+    background-color: #303ef7;
+    transform: scale(1.05);
+}
